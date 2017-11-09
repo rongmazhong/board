@@ -120,8 +120,8 @@ public class ForumService {
 	/**
 	 * 获取论坛某页主题帖，以最后回复时间降序排序
 	 */
-	public Page getPagePost(int topicId,int pageNo,int pageSize){
-		return postDao.getPagedPosts(topicId,pageNo,pageSize);
+	public Page getPagedTopics(int boardId,int pageNo,int pageSize){
+		return topicDao.getPagedTopics(boardId,pageNo,pageSize);
 	}
 	/**
 	 * 获取同一主题帖每页，以最后回复时间降序排序
